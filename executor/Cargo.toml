@@ -1,0 +1,13 @@
+
+[package]
+name = "executor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+fyrox = { workspace = true }
+estonteco_2210 = { path = "../game", optional = true }
+
+[features]
+default = ["estonteco_2210"]
+dylib = ["fyrox/dylib"]
